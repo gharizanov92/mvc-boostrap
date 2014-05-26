@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bar Manager</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{../css/application.css}"/>
+    <link href="../css/bootstrap.min.css" th:href="@{../css/bootstrap.min.css}" rel="stylesheet"/>
+
+    <!-- Custom styles for this page -->
+    <link href="../css/signin.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="container">
+
+    <form class="form-signin" role="form" action="/register" method="post">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="email" class="form-control" name = "username" placeholder="Email address">
+        </input>
+        <input type="password" class="form-control" name = "password" placeholder="Password">
+        </input>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+    </form>
+
+</div>
+</body>
+</html>
